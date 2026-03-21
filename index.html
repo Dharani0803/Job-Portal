@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ElevateJobs | Smart Placement Portal</title>
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <i class="fas fa-briefcase"></i>
+                <span>ElevateJobs</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#" class="nav-link" id="homeLink">Home</a></li>
+                <!-- Jobs dropdown -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Jobs <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-feature="Create a Job Alert"><i class="fas fa-bell"></i> Create a Job Alert</a></li>
+                        <li><a href="#" data-feature="Search for a job"><i class="fas fa-search"></i> Search for a job</a></li>
+                        <li><a href="#" data-feature="Check your Resume"><i class="fas fa-file-alt"></i> Check your Resume</a></li>
+                    </ul>
+                </li>
+                <!-- Companies -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Companies <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-feature="Partners"><i class="fas fa-handshake"></i> Partners</a></li>
+                        <li><a href="#" data-feature="Clients"><i class="fas fa-building"></i> Clients</a></li>
+                    </ul>
+                </li>
+                <!-- Services -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-feature="Career guidance"><i class="fas fa-chalkboard-user"></i> Career guidance</a></li>
+                        <li><a href="#" data-feature="Training & Support"><i class="fas fa-laptop-code"></i> Training & Support</a></li>
+                        <li><a href="#" data-feature="Profile booster"><i class="fas fa-rocket"></i> Profile booster</a></li>
+                    </ul>
+                </li>
+                <!-- Reviews -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Reviews <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-feature="Latest Placements"><i class="fas fa-trophy"></i> Latest Placements</a></li>
+                        <li><a href="#" data-feature="Placement & Intern reviews"><i class="fas fa-star"></i> Placement & Intern reviews</a></li>
+                    </ul>
+                </li>
+                <!-- About Us -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" data-feature="Contact Us"><i class="fas fa-phone-alt"></i> Contact Us</a></li>
+                        <li><a href="#" data-feature="News and events"><i class="fas fa-calendar-alt"></i> News and events</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link sign-btn" id="signBtn"><i class="fas fa-user-plus"></i> Sign</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Your next career <br> starts here</h1>
+                <p>Join 10,000+ professionals & discover opportunities with top employers. Elevate your journey today.</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Job title, keywords, or company" id="jobSearchInput">
+                    <button id="quickSearchBtn"><i class="fas fa-search"></i> Search Job</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="team work" class="hero-img" style="border-radius: 28px;">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Quick Access Cards: all required sub-items from structure -->
+        <div>
+            <h2 class="section-title">✨ Portal Explorer</h2>
+            <p style="margin-bottom: 10px; color: #2c3e66;">All key services & tools — one click away</p>
+        </div>
+        <div class="features-grid">
+            <!-- Jobs group -->
+            <div class="feature-card" data-action="Create a Job Alert"><div class="feature-icon"><i class="fas fa-bell"></i></div><span class="badge-cat">Jobs</span><h3>Create a Job Alert</h3><p>Get notified about matching opportunities</p></div>
+            <div class="feature-card" data-action="Search for a job"><div class="feature-icon"><i class="fas fa-magnifying-glass"></i></div><span class="badge-cat">Jobs</span><h3>Search for a job</h3><p>Find your dream role in seconds</p></div>
+            <div class="feature-card" data-action="Check your Resume"><div class="feature-icon"><i class="fas fa-file-lines"></i></div><span class="badge-cat">Jobs</span><h3>Check your Resume</h3><p>AI-powered resume analysis</p></div>
+            <!-- Companies -->
+            <div class="feature-card" data-action="Partners"><div class="feature-icon"><i class="fas fa-handshake"></i></div><span class="badge-cat">Companies</span><h3>Partners</h3><p>Our trusted partner network</p></div>
+            <div class="feature-card" data-action="Clients"><div class="feature-icon"><i class="fas fa-building-user"></i></div><span class="badge-cat">Companies</span><h3>Clients</h3><p>Top companies hiring now</p></div>
+            <!-- Services -->
+            <div class="feature-card" data-action="Career guidance"><div class="feature-icon"><i class="fas fa-compass"></i></div><span class="badge-cat">Services</span><h3>Career guidance</h3><p>Expert mentorship & planning</p></div>
+            <div class="feature-card" data-action="Training & Support"><div class="feature-icon"><i class="fas fa-chalkboard"></i></div><span class="badge-cat">Services</span><h3>Training & Support</h3><p>Upskill with bootcamps</p></div>
+            <div class="feature-card" data-action="Profile booster"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><span class="badge-cat">Services</span><h3>Profile booster</h3><p>Stand out to recruiters</p></div>
+            <!-- Reviews -->
+            <div class="feature-card" data-action="Latest Placements"><div class="feature-icon"><i class="fas fa-chart-simple"></i></div><span class="badge-cat">Reviews</span><h3>Latest Placements</h3><p>Success stories 2025</p></div>
+            <div class="feature-card" data-action="Placement & Intern reviews"><div class="feature-icon"><i class="fas fa-comment-dots"></i></div><span class="badge-cat">Reviews</span><h3>Placement & Intern reviews</h3><p>Real experiences from peers</p></div>
+            <!-- About Us -->
+            <div class="feature-card" data-action="Contact Us"><div class="feature-icon"><i class="fas fa-headset"></i></div><span class="badge-cat">About Us</span><h3>Contact Us</h3><p>24/7 support & inquiries</p></div>
+            <div class="feature-card" data-action="News and events"><div class="feature-icon"><i class="fas fa-newspaper"></i></div><span class="badge-cat">About Us</span><h3>News and events</h3><p>Webinars & hiring drives</p></div>
+        </div>
+
+        <!-- Works & Performance Image Gallery -->
+        <h2 class="section-title">📸 Our Impact & Performance</h2>
+        <div class="gallery">
+            <div class="gallery-item"><img src="https://picsum.photos/id/20/400/250" alt="corporate event"><div class="gallery-caption">💼 Mass Recruitment Drive 2024</div></div>
+            <div class="gallery-item"><img src="https://picsum.photos/id/26/400/250" alt="training session"><div class="gallery-caption">🎓 Training & Career Workshops</div></div>
+            <div class="gallery-item"><img src="./images/image1.jpg" alt="placement celebration"><div class="gallery-caption">🏆 500+ Placements this year</div></div>
+            <div class="gallery-item"><img src="./images/image2.jpg" alt="global partners"><div class="gallery-caption">🤝 Global Partner Summit</div></div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="stats-row">
+            <div class="stat"><h3>12k+</h3><p>Active Jobs</p></div>
+            <div class="stat"><h3>850+</h3><p>Partner Companies</p></div>
+            <div class="stat"><h3>98%</h3><p>Placement Assistance</p></div>
+            <div class="stat"><h3>4.9★</h3><p>User Reviews</p></div>
+        </div>
+    </div>
+</main>
+
+<!-- ========== ENHANCED FOOTER (Creatrix Campus Inspired) ========== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>ElevateJobs</h4>
+                <p>Intelligent placement ecosystem connecting students, placement teams, and companies — inspired by Creatrix Campus excellence.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>For Students</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-user-graduate"></i> Build Digital Portfolio</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Job Alerts & Matching</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Profile Booster</a></li>
+                    <li><a href="#"><i class="fas fa-laptop-code"></i> Training & Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Placement Team</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-building"></i> Employer Management</a></li>
+                    <li><a href="#"><i class="fas fa-chart-simple"></i> Real-time Dashboards</a></li>
+                    <li><a href="#"><i class="fas fa-file-signature"></i> Placement Agreements</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard"></i> Interview Scheduling</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>For Companies</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-users"></i> Access Student Database</a></li>
+                    <li><a href="#"><i class="fas fa-filter"></i> Skill-based Matching</a></li>
+                    <li><a href="#"><i class="fas fa-chart-pie"></i> Hiring Analytics</a></li>
+                    <li><a href="#"><i class="fas fa-handshake"></i> Post Jobs Instantly</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> News & Events</a></li>
+                    <li><a href="#"><i class="fas fa-shield-alt"></i> Privacy & Compliance</a></li>
+                    <li><a href="#"><i class="fas fa-life-ring"></i> Support Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ElevateJobs — Next-Gen Placement Management System. All rights reserved.</p>
+            <div class="footer-badge">
+                <span><i class="fas fa-chart-line"></i> Real-time insights</span>
+                <span><i class="fas fa-robot"></i> AI-powered matching</span>
+                <span><i class="fas fa-mobile-alt"></i> Mobile ready</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+

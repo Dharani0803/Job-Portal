@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #f3f3f3;
+
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+/* LEFT SIDE */
+.hero-left {
+    width: 40%;
+    height: 300px;
+    
+}
+.hero-left-icon{
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+.icon-one__2{
+    display: inline-block;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+
+.icon-one__3{
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 30px;
+    
+}
+.icon-one__1{
+    margin-right: 50px;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.icon-one__4{
+    margin-right: 50px;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+
+/* RIGHT SIDE */
+.hero-right {
+    width: 40%;
+}
+
+.hero-right h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero-right span {
+    display: block;
+    margin-top: 10px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+}
+
+#dropdownBtn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, #6aa8ff, #5a4bff);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* MENU */
+#dropdownMenu {
+    width: 100%;
+    list-style: none;
+    background: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+    display: none;
+
+}
+#dropdownMenu a:hover{
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+#dropdownMenu a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#dropdownMenu li {
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* LOCATION SECTION */
+.locations {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 60px;
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+
+.location-box {
+    padding: 20px;
+}
+
+/* HEADING */
+.location-box h2 {
+    font-size: 26px;
+    color: #0d2b5c;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.location-box p {
+    margin: 5px;
+    color: #333;
+}
+
+

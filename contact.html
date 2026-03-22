@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>ElevateJobs | Contact Us - Get in Touch</title>
+  <title>Contact Us</title>
   <!-- Google Fonts + Font Awesome -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap"
@@ -34,71 +34,67 @@
 
     /* Header Styles */
     .header {
-      background: white;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(2px);
-      background: rgba(255, 255, 255, 0.96);
-    }
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.03), 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+  background: rgba(255,255,255,0.96);
+}
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-      flex-wrap: wrap;
-    }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  flex-wrap: wrap;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 800;
-      font-size: 1.8rem;
-      letter-spacing: -0.5px;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      transition: transform 0.2s ease;
-      cursor: pointer;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 800;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform 0.2s ease;
+}
 
-    .logo i {
-      background: none;
-      color: #1e3c72;
-      font-size: 2rem;
-    }
+.logo i {
+  background: none;
+  color: #1e3c72;
+  font-size: 2rem;
+}
 
-    .logo:hover {
-      transform: scale(1.02);
-    }
+.logo:hover {
+  transform: scale(1.02);
+}
 
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-    }
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
 
-    .nav-link {
-      text-decoration: none;
-      font-weight: 600;
-      color: #1e293b;
-      transition: color 0.2s;
-      padding: 8px 0;
-    }
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1e293b;
+  transition: color 0.2s;
+  padding: 8px 0;
+}
 
-    .nav-link:hover {
-      color: #2a5f8a;
-    }
+.nav-link:hover {
+  color: #2a5f8a;
+  border-bottom: 2px solid #2a5f8a;
+  padding-bottom: 6px;
+}
 
-    .contact-active {
-      color: #2a5f8a;
-      border-bottom: 2px solid #2a5f8a;
-      padding-bottom: 6px;
-    }
 
     /* Hero Section */
     .contact-hero {
@@ -444,18 +440,22 @@
   <header class="header">
     <div class="container">
       <div class="navbar">
-        <div class="logo" onclick="window.location.href='index.html'">
+        <div class="logo">
           <i class="fas fa-briefcase"></i>
-          <span>ElevateJobs</span>
+          <span>Job Portal</span>
         </div>
         <div class="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
+          <a href="home.html" class="nav-link">Home</a>
+          <a href="index.html" class="nav-link">Jobs</a>
           <a href="service.html" class="nav-link">Services</a>
-          <a href="contact.html" class="nav-link contact-active">Contact</a>
-          <a href="contactus.html" class="nav-link">Aboutus</a>
-        <a href="newsletter.html" class="nav-link">NewsLetter</a>
+          <a href="contact.html" class="nav-link">Contact Us</a>
+          <a href="newsletter.html" class="nav-link">News Letter</a>
+          <a href="signin.html" class="nav-link">Sign In</a>
+          <a href="jobalert.html" class="nav-link">Job Alert</a>
+          <a href="resume.html" class="nav-link">Resume Checker</a>
         </div>
       </div>
+    </div>
     </div>
   </header>
 

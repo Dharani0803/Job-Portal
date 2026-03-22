@@ -1,46 +1,160 @@
-<style>
-    /* FORM */
-    .form-section {
-        padding: 40px;
-        text-align: center;
-        background: #f5f5f5;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    .form-section form {
-        max-width: 400px;
-        margin: auto;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevateJobs | Expert Services for Career Success</title>
+</head>
 
-    .form-section input,
-    .form-section textarea {
-        width: 100%;
-        margin: 10px;
-        padding: 10px;
-    }
+<body>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafc;
+            color: #1e293b;
+            line-height: 1.5;
+        }
 
-    .form-section button {
-        width: 100%;
-        padding: 10px;
-        background: black;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-</style>
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-<!-- CONTACT FORM -->
-<section id="contactForm" class="form-section hidden">
+        /* Header Styles */
+        .header {
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(2px);
+            background: rgba(255, 255, 255, 0.96);
+        }
 
-    <h2>Contact Form</h2>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+            flex-wrap: wrap;
+        }
 
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="number" placeholder="Phone Number" required>
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 800;
+            font-size: 1.8rem;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: transform 0.2s ease;
+        }
 
-        <textarea placeholder="Your Message"></textarea>
+        .logo i {
+            background: none;
+            color: #1e3c72;
+            font-size: 2rem;
+        }
 
-        <button type="submit">Submit</button>
-    </form>
+        .logo:hover {
+            transform: scale(1.02);
+        }
 
-</section>
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            font-weight: 600;
+            color: #1e293b;
+            transition: color 0.2s;
+            padding: 8px 0;
+        }
+
+        .nav-link:hover {
+            color: #2a5f8a;
+        }
+
+        .services-active {
+            color: #2a5f8a;
+            border-bottom: 2px solid #2a5f8a;
+            padding-bottom: 6px;
+        }
+
+
+        /* FORM */
+        .form-section {
+            padding: 40px;
+            text-align: center;
+            background: #f5f5f5;
+        }
+
+        .form-section form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .form-section button {
+            width: 100%;
+            padding: 10px;
+            background: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <i class="fas fa-briefcase"></i>
+                    <span>ElevateJobs</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="service.html" class="nav-link services-active">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="newsletter.html" class="nav-link">NewsLetter</a>
+                    <a href="contactus.html" class="nav-link">Aboutus</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- CONTACT FORM -->
+    <section id="contactForm" class="form-section hidden">
+
+        <h2>Contact Form</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="number" placeholder="Phone Number" required>
+
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+</body>
+
+</html>

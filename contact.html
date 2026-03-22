@@ -662,7 +662,7 @@
   </footer>
 
   <!-- External JavaScript -->
-  <script src="contact.js">
+  <script >
     // Handle form submission
     const contactForm = document.getElementById('contactForm');
 
@@ -711,23 +711,7 @@
         successDiv.remove();
       }, 5000);
 
-      // Optional: Send data to server (you would uncomment this for actual backend integration)
-      /*
-      fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData)
-      })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch(error => {
-        console.error('Error:', error);
-      });
-      */
+ 
     });
 
     // FAQ Accordion functionality

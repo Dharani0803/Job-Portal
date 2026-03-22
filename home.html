@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerDev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">🚀 CareerDev</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#campuses">Campuses</a>
+            <a href="#courses">Courses</a>
+            <a href="#events">Events</a>
+            <a href="#achivements">Achievements</a>
+            <a href="#community">Community</a>
+            <a href="#newsletter">Newsletter</a>
+            <a href="#consult">Free Consulting</a>
+        </nav>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <button class="signin">Sign In</button>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-left">
+            <div class="badge">
+                <span class="dot"></span>
+                Join 50,000+ professionals accelerating their careers
+            </div>
+
+            <h1>
+                Transform Your Career <br>
+                <span>Into Success Story</span>
+            </h1>
+
+            <p>
+                Unlock your potential with expert guidance, industry-leading courses,
+                and a supportive community. Your dream career starts here.
+            </p>
+
+            <div class="buttons">
+                <button class="primary">Get Started Free →</button>
+                <button class="secondary">▶ Explore Platform</button>
+            </div>
+
+            <div class="stats">
+                <div>
+                    <h2>50,000+</h2>
+                    <p>Active Learners</p>
+                </div>
+                <div>
+                    <h2>200</h2>
+                    <p>Expert Mentors</p>
+                </div>
+                <div>
+                    <h2>95</h2>
+                    <p>Success Rate %</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="card">
+                <h3>Build Your Future</h3>
+            </div>
+
+            <div class="floating top">Career Growth<br><span>+45% avg increase</span></div>
+            <div class="floating mid">⭐ 4.9 Rating<br><span>From 12k reviews</span></div>
+            <div class="floating bottom">✔ Job Placed<br><span>15,000+ this year</span></div>
+        </div>
+
+    </section>
+
+
+    <section class="locations" id="campuses">
+
+        <div class="container">
+
+            <p class="section-tag">OUR LOCATIONS</p>
+            <h2 class="section-title">Learn at Our World-Class Campuses</h2>
+            <p class="section-subtitle">
+                State-of-the-art facilities across major cities, designed for optimal learning experiences
+            </p>
+
+            <div class="locations-grid">
+
+                <!-- CARD -->
+                <div class="location-card gradient1">
+                    <span class="badge">Main Campus</span>
+                    <div class="card-content">
+                        <h3>San Francisco HQ</h3>
+                        <p>📍 California, USA</p>
+                    </div>
+                </div>
+
+                <div class="location-card gradient2">
+                    <span class="badge">Tech Hub</span>
+                    <div class="card-content">
+                        <h3>New York Campus</h3>
+                        <p>📍 New York, USA</p>
+                    </div>
+                </div>
+
+                <div class="location-card gradient3">
+                    <span class="badge">Innovation Center</span>
+                    <div class="card-content">
+                        <h3>London Campus</h3>
+                        <p>📍 London, UK</p>
+                    </div>
+                </div>
+
+                <div class="location-card gradient4">
+                    <span class="badge">Asia Pacific</span>
+                    <div class="card-content">
+                        <h3>Singapore Campus</h3>
+                        <p>📍 Singapore</p>
+                    </div>
+                </div>
+
+                <div class="location-card gradient5">
+                    <span class="badge">EMEA Hub</span>
+                    <div class="card-content">
+                        <h3>Dubai Campus</h3>
+                        <p>📍 Dubai, UAE</p>
+                    </div>
+                </div>
+
+                <div class="location-card gradient6">
+                    <span class="badge">Research Center</span>
+                    <div class="card-content">
+                        <h3>Toronto Campus</h3>
+                        <p>📍 Toronto, Canada</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Courses Section -->
+
+    <div class="courses-header-center">
+
+        <span class="courses-tag">EXPLORE COURSES</span>
+
+        <h2 class="courses-title">
+            Master Skills That Matter
+        </h2>
+
+        <p class="courses-subtitle">
+            Industry-aligned courses taught by experts to keep you ahead in your career
+        </p>
+
+    </div>
+    <div class="courses-grid" id="courses">
+
+
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/webdev.jpg" alt="Web Dev">
+                <span class="course-badge popular">Popular</span>
+            </div>
+            <div class="course-content">
+                <span class="course-category">Development</span>
+                <h3 class="course-title">Full-Stack Web Development Bootcamp</h3>
+                <div class="course-meta">
+                    <span>⏱️ 16 weeks</span>
+                    <span>⭐ 4.9</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/ai.jpg" alt="AI">
+                <span class="course-badge new">New</span>
+            </div>
+            <div class="course-content">
+                <span class="course-category">AI & ML</span>
+                <h3 class="course-title">Machine Learning & AI Fundamentals</h3>
+                <div class="course-meta">
+                    <span>⏱️ 12 weeks</span>
+                    <span>⭐ 4.8</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/data.jpg" alt="Data">
+            </div>
+            <div class="course-content">
+                <span class="course-category">Data Science</span>
+                <h3 class="course-title">Data Analytics & Visualization</h3>
+                <div class="course-meta">
+                    <span>⏱️ 10 weeks</span>
+                    <span>⭐ 4.9</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/design.jpg" alt="Design">
+                <span class="course-badge popular">Popular</span>
+            </div>
+            <div class="course-content">
+                <span class="course-category">Design</span>
+                <h3 class="course-title">UX/UI Design Masterclass</h3>
+                <div class="course-meta">
+                    <span>⏱️ 8 weeks</span>
+                    <span>⭐ 4.9</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/marketing.jpg" alt="Marketing">
+            </div>
+            <div class="course-content">
+                <span class="course-category">Business</span>
+                <h3 class="course-title">Digital Marketing Strategy</h3>
+                <div class="course-meta">
+                    <span>⏱️ 6 weeks</span>
+                    <span>⭐ 4.7</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/cloud.jpg" alt="Cloud">
+                <span class="course-badge new">New</span>
+            </div>
+            <div class="course-content">
+                <span class="course-category">Cloud</span>
+                <h3 class="course-title">AWS Cloud Architecture</h3>
+                <div class="course-meta">
+                    <span>⏱️ 14 weeks</span>
+                    <span>⭐ 4.8</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/security.jpg" alt="Security">
+            </div>
+            <div class="course-content">
+                <span class="course-category">Security</span>
+                <h3 class="course-title">Cybersecurity Essentials</h3>
+                <div class="course-meta">
+                    <span>⏱️ 10 weeks</span>
+                    <span>⭐ 4.8</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-card fade-in">
+            <div class="course-image">
+                <img src="images/mobile.jpg" alt="Mobile">
+            </div>
+            <div class="course-content">
+                <span class="course-category">Mobile</span>
+                <h3 class="course-title">React Native Development</h3>
+                <div class="course-meta">
+                    <span>⏱️ 12 weeks</span>
+                    <span>⭐ 4.9</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="achievements" id="achivements">
+
+        <h2 class="section-title">Our Achievements</h2>
+        <p class="sub">
+            Join our prestigious educational group and be part of our success story.
+        </p>
+
+        <div class="achieve-grid">
+
+            <div class="achieve-card">
+                <div class="icon">🏛️</div>
+                <h3>39+</h3>
+                <p>Institutions</p>
+            </div>
+
+            <div class="achieve-card">
+                <div class="icon">👨‍🎓</div>
+                <h3>45K+</h3>
+                <p>Students</p>
+            </div>
+
+            <div class="achieve-card">
+                <div class="icon">📘</div>
+                <h3>185+</h3>
+                <p>Programs</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="community" id="community">
+
+        <div class="community-container">
+
+            <!-- LEFT -->
+            <div class="community-left">
+
+                <h2>
+                    Join a Community of <br>
+                    Ambitious Professionals
+                </h2>
+
+                <p class="subtitle">
+                    Connect with like-minded individuals, share experiences, and grow together.
+                    Our community is your support system for career success.
+                </p>
+
+                <!-- USERS -->
+                <div class="users">
+                    <div class="avatars">
+                        <span>JD</span>
+                        <span>KL</span>
+                        <span>MN</span>
+                        <span>OP</span>
+                        <span class="more">+50K</span>
+                    </div>
+                    <p><strong>50,000+</strong> members worldwide</p>
+                </div>
+
+                <!-- FEATURES -->
+                <ul class="features">
+                    <li>Exclusive networking events and meetups</li>
+                    <li>Access to industry mentors and experts</li>
+                    <li>Job referrals from community members</li>
+                    <li>Collaborative projects and hackathons</li>
+                </ul>
+
+                <!-- BUTTON -->
+                <button class="join-btn">
+                    Join Community →
+                </button>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="community-right">
+                <div class="card">
+                    <div class="emoji">🤝</div>
+                    <h3>Stronger Together</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="newsletter" id="newsletter">
+
+        <div class="newsletter-box">
+
+            <div class="icon-box">
+                📬
+            </div>
+
+            <h2>Stay Ahead of the Curve</h2>
+
+            <p class="subtitle">
+                Get weekly insights on career trends, job opportunities, and exclusive
+                resources delivered straight to your inbox.
+            </p>
+
+            <div class="newsletter-form">
+                <input type="email" placeholder="Enter your email address">
+                <button>Subscribe</button>
+            </div>
+
+            <p class="note">
+                ✨ Join 25,000+ subscribers. Unsubscribe anytime.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="consult" id="consult">
+
+        <div class="consult-box">
+
+            <!-- LEFT -->
+            <div class="consult-left">
+
+                <span class="tag">🟢 Limited Availability</span>
+
+                <h2>
+                    Get Your Free Career <br>
+                    Consultation
+                </h2>
+
+                <p class="subtitle">
+                    Schedule a personalized 30-minute session with our career experts.
+                    Get actionable advice tailored to your goals and experience.
+                </p>
+
+                <!-- FEATURES -->
+                <ul class="consult-features">
+                    <li>Career path analysis</li>
+                    <li>Skills assessment</li>
+                    <li>Resume review</li>
+                    <li>Industry insights</li>
+                </ul>
+
+                <!-- BUTTONS -->
+                <div class="consult-buttons">
+                    <button class="primary-btn">Book Free Session 📅</button>
+                    <button class="secondary-btn">Learn More</button>
+                </div>
+
+            </div>
+
+            <!-- RIGHT -->
+            <div class="consult-right">
+                <div class="consult-card">
+                    <div class="icon">🎯</div>
+                    <h3>Your Success Starts Here</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-about">
+                <div class="logo">
+                    🚀 CareerDev
+                </div>
+
+                <p>
+                    Empowering professionals worldwide to achieve their career aspirations
+                    through expert guidance, quality education, and a supportive community.
+                </p>
+
+                <div class="socials">
+                    <span>X</span>
+                    <span>in</span>
+                    <span>f</span>
+                    <span>📷</span>
+                </div>
+            </div>
+
+            <!-- LINKS -->
+            <div class="footer-links">
+
+                <div>
+                    <h4>Platform</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Enterprise</a>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <a href="#">Blog</a>
+                    <a href="#">Career Guide</a>
+                    <a href="#">Success Stories</a>
+                    <a href="#">Help Center</a>
+                </div>
+
+                <div>
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div>
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">GDPR</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="footer-bottom">
+            <p>© 2025 CareerDev. All rights reserved.</p>
+
+            <div class="footer-bottom-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Sitemap</a>
+            </div>
+        </div>
+
+    </footer>
+
+    <script>
+function toggleMenu() {
+    document.querySelector(".navbar nav").classList.toggle("active");
+}
+</script>
+</body>
+
+</html>
